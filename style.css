@@ -1,0 +1,224 @@
+/*
+ Theme Name:   biz-vektor-child
+ Theme URI:    http://hitoriguide.com/wp-content/themes/biz-vektor-child/
+ Description:  BizVektor Child Theme
+ Author:       yucco
+ Author URI:   http://hitoriguide.com
+ Template:     biz-vektor
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Text Domain:  biz-vektor
+*/
+
+/* -------------------- サイト全体のフォント指定 -------------------- */
+html {
+	font-family: "Roboto", Helvetica, "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "Mplus 1p", "メイリオ", "Meiryo UI", sans-serif;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+/* -------------------- 記事のカスタマイズ -------------------- */
+body {
+	font-size: 16px;
+	font-family: "Roboto", Helvetica, "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "Mplus 1p", "メイリオ", "Meiryo UI", sans-serif;
+}
+#content table,
+#content li {
+	font-family: "Roboto", Helvetica, "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "Mplus 1p", "メイリオ", "Meiryo UI", sans-serif;
+}
+#content p {
+	margin-bottom: 5px;
+	line-height: normal;
+}
+#content ul {
+    margin: 20px 0px 20px 20px;
+}
+#powerd{display:none}
+@media (min-width: 970px) {
+#main #container #content { width:680px; }
+}
+@media (min-width: 970px) {
+#main #container #sideTower { width:245px; }
+}
+/* Tips */
+.tips {position: relative;
+	margin: 2em 0 1em;
+	font-family: "Menlo", "Roboto", Helvetica, "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "Mplus 1p", "メイリオ", "Meiryo UI", sans-serif;
+	font-size:14px;
+	background: #eeeeee;
+	box-shadow: 5px 5px 5px #aaaaaa;
+	padding: 20px;
+	margin-bottom: 1em;
+	border-radius: 10px;
+}
+
+.tips:before	{position: absolute;
+			left: 15px;
+			top: -15px;
+			content: '\f08d';
+			z-index: 2;
+			width: 32px;
+			height: 32px;
+			padding-top: 3px;
+			border-radius: 16px;
+			-moz-box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+			background-color: #909090;
+			color: #ffffff;
+			font-family: 'FontAwesome';
+			font-size: 26px;
+			line-height: 1;
+			text-align: center}
+
+.tips:after		{position: absolute;
+			left: 32px;
+			top: -8px;
+			z-index: 1;
+			content: 'Tips';
+			padding: 3px 10px 3px 20px;
+			border-radius: 5px;
+			background-color: #909090;
+			color: #ffffff;
+			font-family: Verdana, Helvetica, sans-serif;
+			font-weight: bold;
+			line-height: 1}
+
+/* 補足情報 */
+.point	{position: relative;
+		margin: 2em 0 1em;
+		padding: 25px 20px 20px;
+		border-radius: 10px;
+		background-color: #e6f4ff;
+		box-shadow: 5px 5px 5px #aaaaaa;
+		font-size: 14px;
+		clear: both}
+
+.point:before	{position: absolute;
+			left: 15px;
+			top: -15px;
+			content: '\f0eb';
+			z-index: 2;
+			width: 32px;
+			height: 32px;
+			padding-top: 3px;
+			border-radius: 16px;
+			-moz-box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+			background-color: #0066b3;
+			color: #ffffff;
+			font-family: 'FontAwesome';
+			font-size: 26px;
+			line-height: 1;
+			text-align: center}
+
+.point:after		{position: absolute;
+			left: 32px;
+			top: -8px;
+			z-index: 1;
+			content: 'Point';
+			padding: 3px 10px 3px 20px;
+			border-radius: 5px;
+			background-color: #0066b3;
+			color: #ffffff;
+			font-family: Verdana, Helvetica, sans-serif;
+			font-weight: bold;
+			line-height: 1}
+
+/* 注意書き */
+.attention		{position: relative;
+			margin: 40px 0 30px;
+			padding: 20px;
+			border-radius: 10px;
+			border: dotted 2px #a70d0d;
+			background-color: #fedddd;
+			font-size: 14px;
+			clear: both}
+
+.attention:before	{position: absolute;
+			left: 20px;
+			top: -15px;
+			content: '\f071';
+			background-color: #ffffff;
+			color: #ff0000;
+			font-family: 'FontAwesome';
+			font-size: 26px;
+			line-height: 1}
+
+/* ハイライト */
+.highlight		{background: linear-gradient(transparent 60%, #ffff00 60%);
+			padding: 0 3px}
+
+/* おすすめ記事（サムネイル画像に文字を重ねたリスト） */
+.pickup-article {
+		position: relative;
+		margin: 0 0 0.625rem;
+		padding: 0;
+}
+
+.pickup-article a:hover {
+		opacity: 0.8;
+}
+.pickup-article a {
+		text-decoration: none;
+		color: #ffffff;
+}
+
+.pickup-article .pickup-thumbnail {
+		width: 100%;
+		height: 100px;
+		background-size: cover;
+		background-position: 50% 50%;
+}
+
+.pickup-article .pickup-content {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		padding: 5px 10px;
+		background-color: rgba(0,0,0,0.5);
+		font-size: 12px;
+		-moz-box-siging: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+}
+
+/* -------------------- 外部コンテンツ -------------------- */
+iframe			{max-width: 100%}
+
+/* YouTubeのビデオ */
+.ytvideo			{position: relative;
+				width: 100%;
+				height: 0;
+				padding-top: 56.25%;
+				overflow: hidden;
+				margin-top: 30px;
+				margin-bottom: 30px}
+
+.ytvideo iframe		{position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%}
+
+/* ビデオ */
+.wp-video			{margin-top: 30px;
+				margin-bottom: 30px}
+
+#content .infoList .infoListBox div.entryTxtBox.haveThumbnail {
+    float: left;
+}
+#content .infoList .infoListBox div.thumbImage {
+    float: left;
+	margin-right: 5px;
+}
+#content .infoList .infoListBox div.thumbImage div.thumbImageInner img {
+	width: 150px;
+	height: 150px;
+}
+#content .infoList .infoListBox div.entryTxtBox h4.entryTitle {
+	border-bottom: solid thin #0066bf;
+}
